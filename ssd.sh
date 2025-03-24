@@ -2,7 +2,7 @@
 
 dir=$(dirname "$(realpath $0)")
 
-# Execution of virtual machines requires root previleges
+
 if test "$(id -u)" -ne 0; then
 	printf "%s must be run as root\n" "${0##*/}"
 	exit 1
